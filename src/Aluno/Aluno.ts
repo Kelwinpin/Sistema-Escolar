@@ -1,4 +1,4 @@
-import DB from "./DAO/db";
+import DB from "../DAO/db";
 
 export default class Aluno {
   private DBAluno = new DB();
@@ -8,7 +8,7 @@ export default class Aluno {
   constructor(nome: string, dtaNasc: Date) {
     this.nome = nome;
     this.dtaNasc = dtaNasc.toLocaleDateString();
-    this.save();
+    console.log(this.save());
   }
 
   public get getNome(): string {
@@ -27,7 +27,7 @@ export default class Aluno {
     this.dtaNasc = v;
   }
 
-  public save() {
+  private save() {
     this.DBAluno.setAlunoInDB(this);
   }
 }

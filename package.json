@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test:cov": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -15,12 +16,15 @@
     "esModuleInterop": true
   },
   "devDependencies": {
+    "@types/jest": "^29.4.2",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.4"
+    "happy-dom": "^8.9.0",
+    "prettier": "^2.8.4",
+    "vitest": "^0.29.2"
   }
 }

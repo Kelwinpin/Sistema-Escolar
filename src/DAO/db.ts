@@ -1,4 +1,4 @@
-import Aluno from "../Aluno.js";
+import Aluno from "../Aluno/Aluno.js";
 
 export default class DB {
   vetor: Aluno[] = [];
@@ -8,6 +8,7 @@ export default class DB {
     console.log(
       `Aluno cadastrado com sucesso !!! \n Aluno:${this.ToString()} \n`,
     );
+    return true;
   }
 
   public ToString() {
